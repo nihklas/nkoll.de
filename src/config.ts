@@ -9,10 +9,12 @@ export const SITE = {
   postPerIndex: 4,
   postPerPage: 4,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
-  showArchives: true,
+  showArchives: false,
   showBackButton: true,
   editPost: {
     enabled: false,
+    text: "Edit page",
+    url: "https://git.nkoll.de/nk/nkoll.de/_edit/main/",
   },
   dynamicOgImage: true,
   dir: "ltr",
