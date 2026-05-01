@@ -6,7 +6,7 @@ import z from "zod";
 export const BLOG_PATH = "src/data/blog";
 
 const blog = defineCollection({
-  loader: glob({ pattern: "**/[^_]*.mdx", base: `./${BLOG_PATH}` }),
+  loader: glob({ pattern: "**/[^_]*.md(x)?", base: `./${BLOG_PATH}` }),
   schema: ({ image }) =>
     z.object({
       author: z.string().default(SITE.author),
