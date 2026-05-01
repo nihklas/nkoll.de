@@ -41,4 +41,5 @@ jobs:
           known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
           deploy_user: ${{ vars.SSH_USER }}
           host: nkoll.de
+          port: 2222
           target_path: /var/www/nkoll.de/
