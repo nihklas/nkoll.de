@@ -1,6 +1,6 @@
 ---
 title: I don't like AI
-pubDatetime: 2026-05-02T18:00:00Z
+pubDatetime: 2026-05-02T18:00:00
 draft: true
 tags:
   - ai

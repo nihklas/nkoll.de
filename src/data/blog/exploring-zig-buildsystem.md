@@ -1,11 +1,11 @@
 ---
 title: Exploring the Zig Buildsystem
-pubDatetime: 2024-10-29T18:00:00Z
+pubDatetime: 2024-10-29T18:00:00
 tags:
-    - zig
-    - zig buildsystem
+  - zig
+  - zig buildsystem
 description: I made my own Command Line Parsing Library and used it as an excuse to explore the possibilities of comptime and the buildsystem.
---- 
+---
 
 The [Zig Buildsystem](https://ziglang.org/learn/build-system/) is an amazing
 tool for managing Zig projects, as well as C/C++ based projects. I already used
@@ -89,7 +89,7 @@ rewrite of the whole library so I needed some kind of breakthrough moment to
 keep going with my idea. The generated Parser was as specific as possible, with
 the necessary sprinkles of abstraction, to make the parser generation itself
 more fun and easier to work with. Stuff like type conversion has its own
-function. 
+function.
 
 Adding subcommands was now almost trivial, as the code runs normally and
 recursion is simply a matter of writing stuff to a file. The active subcommand
@@ -113,7 +113,7 @@ switch (parser.subcommand) {
 }
 ```
 
-With each function looking something like: 
+With each function looking something like:
 
 ```zig
 fn helloCommand(parser: *Zli, alloc: std.mem.Allocator) u8 {
@@ -153,7 +153,7 @@ complies to some simple structure:
 try zli.generateParser(.{
     .desc =
     \\This Command acts as an example on how to use the Zli library
-    \\for command line parsing. Take a look at the files in ./example 
+    \\for command line parsing. Take a look at the files in ./example
     \\to see how this example works.
     ,
     .options = .{
@@ -191,7 +191,7 @@ Every field is optional. If you don't want/need a description, just don't write
 one. If you don't have any arguments, don't include them in the definition.
 
 At least for, this way of defining the structure feels natural. After all, I
-designed this Library for me specifically. 
+designed this Library for me specifically.
 
 #### Types as Values
 
@@ -223,7 +223,7 @@ do.
 ## Building the Parser
 
 The Parser is generated at build-time, we know that by now (I can't seem to shut
-up about it), but *how* is it generated at build-time? Let's take a look.
+up about it), but _how_ is it generated at build-time? Let's take a look.
 
 ```zig
 pub fn buildParser(b: *std.Build, zli_module: *std.Build.Module, program: *std.Build.Step.Compile, parser_file: []const u8) void {
