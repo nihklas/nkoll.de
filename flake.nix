@@ -25,5 +25,38 @@
         ];
       };
     });
+
+    packages = eachSystem ({pkgs, ...}: {
+      default = pkgs.stdenv.mkDerivation (finalAttrs: {
+        src = pkgs.lib.cleanSource ./.;
+        pname = "nkoll.de";
+        version = "0.0.0";
+
+        nativeBuildInputs = with pkgs; [
+          nodejs_24
+          pnpm_10
+          pnpmConfigHook
+        ];
+
+        pnpmDeps = pkgs.fetchPnpmDeps {
+          inherit (finalAttrs) pname version src;
+          fetcherVersion = 2;
+          hash = "sha256-pJDerwVNQnSnUB5eYKCG4pNyBbQ+1OXY2/kQvl5/kvk=";
+        };
+        buildPhase = ''
+          runHook preBuild
+
+          export NODE_ENV=production
+          export CI=1
+          pnpm run build
+
+          runHook preBuild
+        '';
+
+        installPhase = ''
+          mv dist $out
+        '';
+      });
+    });
   };
 }

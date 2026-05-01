@@ -16,7 +16,7 @@ export const SITE = {
     text: "Edit page",
     url: "https://git.nkoll.de/nk/nkoll.de/_edit/main/",
   },
-  dynamicOgImage: true,
+  dynamicOgImage: false,
   dir: "ltr",
   lang: "en",
   timezone: "Europe/Berlin",
