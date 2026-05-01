@@ -23,22 +23,22 @@ jobs:
           name: site
           path: output
 
-  # deploy:
-  #   runs-on: deploy
-  #   needs: build
-  #   steps:
-  #     - name: Get Artifacts
-  #       uses: https://code.forgejo.org/forgejo/download-artifact@v4
-  #       with:
-  #         name: site
-  #         path: output
-  #
-  #     - name: Deploy
-  #       uses: actions/deploy@main
-  #       with:
-  #         path: output/
-  #         private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-  #         known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
-  #         deploy_user: ${{ vars.SSH_USER }}
-  #         host: nkoll.de
-  #         target_path: /var/www/nkoll.de/
+  deploy:
+    runs-on: deploy
+    needs: build
+    steps:
+      - name: Get Artifacts
+        uses: https://code.forgejo.org/forgejo/download-artifact@v4
+        with:
+          name: site
+          path: output
+
+      - name: Deploy
+        uses: actions/deploy@main
+        with:
+          path: output/
+          private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+          deploy_user: ${{ vars.SSH_USER }}
+          host: nkoll.de
+          target_path: /var/www/nkoll.de/
