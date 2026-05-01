@@ -1,6 +1,7 @@
 ---
 title: Flowlang Pt.4 - Garbage Collection
 pubDatetime: 2025-07-22T12:00:00
+featured: true
 tags:
   - flowlang
   - zig
