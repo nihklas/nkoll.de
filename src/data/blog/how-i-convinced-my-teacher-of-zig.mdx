@@ -1,0 +1,109 @@
+---
+title: How I Convinced My Teacher To Use Zig
+pubDatetime: 2024-10-11T11:00:00Z
+tags:
+    - zig
+description: I used Zig instead of Python for an exercise, completely deviated from the given code example, and my teacher loved it.
+--- 
+
+## Context
+
+I am currently in my last year of "Ausbildung" (in germany, this is like going
+to school as well as working at a company to be trained in a specific field).
+As part of the lessons we sometimes (rarely) get programming exercises to
+prepare for our exam at the end of the year. In these exams we have to solve
+some small programming questions with pseudo-code. To practice these questions,
+our teacher gave us a task from one of the last years exams and told us, instead
+of pseudo code, we should use Python, as it is pretty close to pseudo-code (or
+at least the form of pseudo-code the exam expects us to write) and still lets us
+run and test out our solution.
+
+## The Task
+
+The task we had to do was from a previous exam a few years back and involved a
+description with class diagrams of given structures, as well as a starting point
+in pseudo-code. If you are interested in the exakt task, you can open the block
+below to look at the text that ChatGPT so kindly translated. 
+
+import Collapse from '../../components/Collapse.astro';
+
+<Collapse>
+    <Fragment slot="summary">
+        Click here to open the Task
+    </Fragment>
+
+    This was the task for us to do:
+
+    > For the flight of the drones, the order in which predefined geolocations are 
+    > approached must be determined. Starting from the current position, the next
+    > position to be approached should always be the one closest to the current
+    > position. The positions to be approached are stored in a one-dimensional array
+    > called `geoPositions` as objects of the class `Geopos`.
+    > 
+    > (insert class diagram showing class `Geopos` with fields `latitude: double`, 
+    > `longitude: double` and `altitude: double`)
+    > 
+    > For each attribute, public access methods (set/get) are available. For distance
+    > calculations between geolocations, the method `getDistance` of the class 
+    > `GeoCalculator` can be used:
+    >
+    > `getDistance(pos1: GeoPos, pos2: GeoPos ): double { static }`
+    >
+    > The algorithm for the drone flight should store and return its result in an 
+    > array called `flightPositions`. The operation of the algorithm 
+    > `calculateFlight()` is described as follows:
+    > 
+    > - The array `geoPositions` can be modified by the algorithm.
+    > - The geolocation at index 0 of the `geoPositions` array will be the first current position. This position is stored in the `flightPositions` array (starting position!) and can then be removed from the array of positions still to be approached (`geoPositions`). (Note: This part is already implemented, see the provided code.)
+    > - As long as geolocations remain in the `geoPositions` array:
+    >   - Determine the position in the `geoPositions` array that has the shortest distance to the current position.
+    >   - This position is then stored in the `flightPositions` array and becomes the new current position.
+    > 
+    > This position can then be removed from the `geoPositions` array.  
+    > Note: The largest double value can be retrieved with `Double.MAX_VALUE`.  
+    > Complete the pseudocode on the opposite page accordingly.
+
+    And this is the given pseudo-code we had to base our answers on:
+
+    ```c
+    calculateFlight(geoPositions: GeoPos[]) : GeoPos[]
+        // Array of already visited positions
+        // Position 0 as starting point
+        flight_positions = new GeoPos(geoPositions.length)  
+       
+        flightPositions[0] = geoPositions[0]
+        currentPos = geoPositions[0]
+        // remove from array of positions still to visit
+        geoPositions.remove(0)                              
+        // ...
+    ```
+</Collapse>
+
+## My Solution
+
+I wasn't happy with the given code sample as a starting point and wanted to do
+it in Zig anyways so I just ignored the description of the algorithm and
+completely made my own.
+
+Instead of handling a growing and a shrinking list in a recursive fashion, I
+chose to just pass the input array as a reference and "sort" it in-place. The
+algorithm gives the same (correct) output as the pseudo-code/python solution,
+but a whole lot faster.
+
+After showing it to my teacher, he first asked what programming language I was
+using. I told him about Zig, discussed a little about what the language is and
+does best, what you typically use it for and some more. He sat down, did a quick
+google search and told me he was looking for a language like that. He is not a
+fan of C++ or Rust, but programmed a lot C and even some Assembly back in his
+day. So Zig to him looked like exactly the modern language he would write
+himself.
+
+He used my solution as an example of optimizing the task for performance and
+memory (went on a rant about pythons garbage collection). A week later he told
+us that on a discussion with other teachers he got asked what programming
+language his students typically use and he proudly told them 'One of my students
+uses Zig'.
+
+He still uses Zig as an example language for being fast and optimized next to C
+and C++ as opposed to the slow but dynamic languages like Python. 
+

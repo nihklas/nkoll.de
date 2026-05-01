@@ -18,6 +18,7 @@
           pkgs.pnpm
           pkgs.nodejs
 
+          pkgs.tailwindcss-language-server
           pkgs.typescript-language-server
           pkgs.vscode-langservers-extracted
           pkgs.astro-language-server
