@@ -118,6 +118,34 @@ try. Give it a try anyways, it's really easy to setup and use.
 
 ## [Linkwarden](https://linkwarden.app/)
 
+Linkwarden is an archiving solution/link organizer/better bookmarking software.
+The documentation does put heavy focus on using their paid service, but they do
+provide it as open source and through a `docker-compose.yaml` file very easily
+selfhostable.
+
+I was looking for a good archiving and link organizing software for quite some
+time now. Linkwarden is a very pretty software, has all the features I want, for
+example fast and simple saving a link, organizing in folders, tagging, archiving
+as in loading a local copy of the page and much more. You can customize what the
+default archiving features are, like simple html dump, PDF export, screenreader
+version etc. You can go even further and add tags which can have other archiving
+features selected. That way you can decide that for example for sites like
+youtube, where no export or archiving feature works as expected, you just create
+a "No Archiving" tag, that decides that links with that tag are only saved as
+simple bookmarks and not archived.
+
+One of it's biggest strengths is in my opinion the official mobile app. Although
+the app is not open source, you can easily connect to your self hosted instance
+and can access, view, edit and save new links on your phone as well. This is a
+big plus over all the other archiving solutions I looked at, as they would need
+me to access the web ui instead of a nice, native app experience.
+
+I must say, it is a pretty heavy application. The main container uses around 370
+MB of RAM idling. After all, it is built using NextJS. It also comes with a
+Postgres Container. So if you save a lot of stuff on restricted hardware, make
+sure to keep an eye on the resources. Which brings us to the next amazing open
+source software.
+
 ## [Beszel](https://beszel.dev/)
 
 ## [Tandoor](https://tandoor.dev/)
