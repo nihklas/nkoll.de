@@ -1,7 +1,6 @@
 ---
 title: Open Source Corner
 pubDatetime: 2026-05-06T10:00:00
-draft: true
 featured: true
 tags:
   - open source
@@ -21,6 +20,10 @@ it, I added a lot of other software to host on it, either stuff I've written
 myself or open source software I find cool, useful or both. I will now try to
 document all of the open source software I am hosting and note down some reasons
 I am hosting that and maybe some experiences on setting everything up.
+
+This post will be updated when I find new interesting open source software I
+try out. Keep coming back once in a while to keep up with useful stuff in the
+self hosted world.
 
 ## Table of contents
 
@@ -148,7 +151,40 @@ source software.
 
 ## [Beszel](https://beszel.dev/)
 
+This is a monitoring software. Both the server, which collects the data and
+displays a nice web ui, and the clients, which sends the specific telemetry to
+the server, are open source. The dashboard and web ui as a whole is very clean,
+tidy, modern and easy to understand. It is incredibly easy to set up multiple
+clients for every machine you want to monitor and you get pretty much all of the
+important information on the dashboard in a table for each machine, as well as
+detailed information and graphs of the different statistics. You even get a full
+overview of all running docker containers and systemd services, as long as the
+clients are set up correctly. Since the client and server are completely
+separate programs, you can monitor the server itself just the same as any other
+machine, which doesn't really make sense for uptime monitoring, but it comes in
+handy if you use it like me and can monitor the CPU usage or other services
+running on there as well. It is also incredibly lightweight on both parts. The
+server has a RAM usage of less than 30 MB and the client even less at about 7
+MB. Keep in mind, those are rough values I took by just looking at the docker
+containers but I think the ballpark numbers are good enough to paint the
+picture.
+
 ## [Tandoor](https://tandoor.dev/)
+
+Tandoor is a Recipe Database. I was looking for quite a bit now, even started
+building my own recipe collection software so my girlfriend and I can start
+saving all the recipes we try out and have them all at one place. It's also
+better than just a link collection of recipes because you _could_ (we don't) add
+carbs, protein and other nutritional values to the ingredients and it calculates
+the nutritions for the recipes by looking at all the ingredients. You can also
+add measurement translations, for example cups of sugar to grams. But the
+arguably best feature is an automatic importer which can take pretty much any
+link to a recipe and collects the ingredients, measurements and instructions and
+tries it's best to divide it up into the correct steps. Sometimes it puts
+everything into a single instruction steps or doesn't connect the ingredients to
+the steps correctly and instead puts all of them into the first step, but
+correcting those things afterwards is very easy and intuitive so it's still much
+faster than typing it out by hand.
 
 ## [Excalidraw](https://excalidraw.com/)
 
@@ -159,4 +195,35 @@ this is a fun little thing you can self host for the sake of it.
 
 ## [Gokapi](https://github.com/Forceu/Gokapi)
 
+This is a file sharing software. It allows logged in users (in my case only
+myself) to create sharable links by uploading files. An alternative you can use
+without the need to log in, there is [wormhole.app](https://wormhole.app/),
+which is what I used before hosting Gokapi. There is not _really_ a reason I
+needed to have a self hosted solution myself, but I love the sentiment of Open
+Source self hosted software.
+
+After setting everything up, I noticed an interesting feature I didn't know I
+need until I tried it out. You can not only share files through links but you
+can also request files through links. You can create links with a few parameters
+set to give other people, so that they upload files onto the app, which only you
+(aka the creator of the link) can see and then download. In this case to upload
+files the other people don't need to register. I don't know if it's even that
+more useful over telling them to upload the files through something like
+wormhole but I just find this so cool and would love to find more use cases to
+use it, but when I do, you just know what I'm gonna be using.
+
 ## [Penpot](https://penpot.app/)
+
+Figma alternative. Actually pretty and usable UI. If you used Figma before, you
+will be comfortable with penpot. This could be the most sophisticated and just
+beautiful open source software I found so far. The company behind it has
+literally this as their main business, the software is for free and open source
+but you can host it with them, which is a payed service. In my humble opinion,
+this is exactly how company backed open source should be. The documentation for
+setting things up is also amazing. Everything just works. I am really not a
+great designer but having something like Figma, for free, without limitations
+but pretty much all features is really a blessing. It also has developers in
+mind, which gets obvious when you see the export options where you can get
+copy-paste ready snippets of the design in HTML, SVG and other formats. You can
+get ready to use CSS variables and rule sets as well. For me as a dev, this
+makes translating designs into code much easier.

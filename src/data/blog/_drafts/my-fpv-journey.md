@@ -17,5 +17,6 @@ description:
 
 - Installing a simulator (Liftoff, 20 bucks)
 - Trying with PS5 controller
-- A LOT of googling, watching youtube
+- A LOT of research, watching youtube
 - first contacts with the community (discord, FPV Lounge)
+- make a shopping list (put in the list)
