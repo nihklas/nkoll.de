@@ -7,8 +7,9 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import getUniqueTags from "@/utils/getUniqueTags";
 import { SITE } from "@/config";
+import postFilter from "@/utils/postFilter";
 
-const posts = await getCollection("blog");
+const posts = await getCollection("blog", postFilter);
 
 let tags = getUniqueTags(posts);
 ---

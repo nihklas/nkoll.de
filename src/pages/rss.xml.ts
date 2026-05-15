@@ -3,9 +3,10 @@ import { getCollection } from "astro:content";
 import { getPath } from "@/utils/getPath";
 import getSortedPosts from "@/utils/getSortedPosts";
 import { SITE } from "@/config";
+import postFilter from "@/utils/postFilter";
 
 export async function GET() {
-  const posts = await getCollection("blog");
+  const posts = await getCollection("blog", postFilter);
   const sortedPosts = getSortedPosts(posts);
   return rss({
     title: SITE.title,

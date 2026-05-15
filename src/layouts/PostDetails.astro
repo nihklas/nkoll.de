@@ -70,17 +70,42 @@ const layoutProps = {
 
 /* ========== Prev/Next Posts ========== */
 
-const allPosts = posts.map(({ data: { title }, id, filePath }) => ({
-  id,
-  title,
-  filePath,
-}));
+const baseFolder = "src/data/blog/";
+
+const findSeries = (filePath: string | undefined): string | null => {
+  let folder: string | null = null;
+  if (filePath) {
+    const postPath = filePath.substring(baseFolder.length);
+    const lastDelimiter = postPath.lastIndexOf("/") ?? -1;
+    if (lastDelimiter > 0) {
+      folder = postPath.substring(0, lastDelimiter) ?? null;
+    }
+  }
+  return folder;
+};
+
+const allPosts = posts.map(({ data: { title }, id, filePath }) => {
+  return {
+    id,
+    title,
+    filePath,
+    series: findSeries(filePath),
+  };
+});
 
 const currentPostIndex = allPosts.findIndex(a => a.id === post.id);
 
 const prevPost = currentPostIndex !== 0 ? allPosts[currentPostIndex - 1] : null;
 const nextPost =
   currentPostIndex !== allPosts.length ? allPosts[currentPostIndex + 1] : null;
+
+const series = findSeries(post.filePath);
+let postsInSeries: typeof allPosts = [];
+if (series) {
+  postsInSeries = allPosts.filter(
+    p => p.series !== null && p.series === series
+  );
+}
 ---
 
 <Layout {...layoutProps}>
@@ -116,6 +141,30 @@ const nextPost =
     </article>
 
     <hr class="my-8 border-dashed" />
+
+    {
+      postsInSeries.length > 1 && (
+        <span class="font-bold text-lg">All posts in this series:</span>
+        <ul class="mt-2">
+          {postsInSeries.map(p => (
+            <li>
+              {p.id === post.id ? (
+                <span class="inline-block font-medium">
+                  {p.title}
+                </span>
+              ) : (
+                <a
+                  class="inline-block font-medium text-accent decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"
+                  href={getPath(p.id, p.filePath)}
+                >
+                  {p.title}
+                </a>
+              )}
+            </li>
+          ))}
+        </ul>
+      )
+    }
 
     <EditPost class="sm:hidden" {hideEditPost} {post} />
 
