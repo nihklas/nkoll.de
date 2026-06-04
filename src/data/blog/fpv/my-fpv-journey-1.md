@@ -14,7 +14,7 @@ description:
 
 I don't remember how exactly but I got into FPV Quadcopter flying. Those are
 those fancy videos you see online where people fly these drones with
-first-person googles through crazy abandoned places and make incredible tricks.
+first-person goggles through crazy abandoned places and make incredible tricks.
 You know, stuff like [this](https://youtu.be/08cDNbkoIuk?si=V3wxPvPWO9u3F2Lz). I
 always found those interesting, but I never go really into it besides a small
 toy quad as a kid, that didn't live very long. Now, I really fell deep into the
