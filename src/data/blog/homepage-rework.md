@@ -1,6 +1,6 @@
 ---
 title: Homepage rework
-pubDatetime: 2026-05-03T18:00:00
+pubDatetime: 2026-05-03
 tags:
   - astro
   - web

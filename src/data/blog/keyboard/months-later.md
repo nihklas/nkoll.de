@@ -1,6 +1,6 @@
 ---
 title: "Keyboard Journey Part 2: Months later"
-pubDatetime: 2026-05-16T15:00:00
+pubDatetime: 2026-05-16
 tags:
   - keyboard
   - experience

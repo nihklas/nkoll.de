@@ -1,6 +1,6 @@
 ---
 title: My FPV Journey Pt. 2
-pubDatetime: 2026-06-04T18:00:00
+pubDatetime: 2026-06-04
 tags:
   - fpv
   - drones

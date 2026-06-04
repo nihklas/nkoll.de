@@ -1,6 +1,6 @@
 ---
 title: Exploring the Zig Buildsystem
-pubDatetime: 2024-10-29T18:00:00
+pubDatetime: 2024-10-29
 tags:
   - zig
   - zig buildsystem

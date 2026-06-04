@@ -1,6 +1,6 @@
 ---
 title: Zine x Tailwind
-pubDatetime: 2024-11-18T12:00:00
+pubDatetime: 2024-11-18
 tags:
   - zine
   - tailwind

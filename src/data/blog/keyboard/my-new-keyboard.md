@@ -1,6 +1,6 @@
 ---
 title: "Keyboard Journey Part 1: My new Split Keyboard"
-pubDatetime: 2025-08-09T15:00:00
+pubDatetime: 2025-08-09
 tags:
   - keyboard
   - experience

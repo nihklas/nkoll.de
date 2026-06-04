@@ -1,6 +1,6 @@
 ---
 title: Flowlang Pt.1 - Introduction
-pubDatetime: 2024-11-24T12:00:00
+pubDatetime: 2024-11-24
 tags:
   - flowlang
   - zig

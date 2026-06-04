@@ -1,6 +1,6 @@
 ---
 title: Flowlang Pt.2 - Integration Testing
-pubDatetime: 2024-12-08T16:00:00
+pubDatetime: 2024-12-08
 tags:
   - flowlang
   - zig

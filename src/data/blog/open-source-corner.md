@@ -1,6 +1,6 @@
 ---
 title: Open Source Corner
-pubDatetime: 2026-05-06T10:00:00
+pubDatetime: 2026-05-06
 featured: true
 tags:
   - open source

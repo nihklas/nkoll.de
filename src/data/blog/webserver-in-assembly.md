@@ -1,6 +1,6 @@
 ---
 title: Writing a Webserver in ARM64 Assembly
-pubDatetime: 2025-07-31T15:00:00
+pubDatetime: 2025-07-31
 featured: true
 tags:
   - ARM64

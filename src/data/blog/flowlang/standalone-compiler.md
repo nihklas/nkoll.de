@@ -1,6 +1,6 @@
 ---
 title: Flowlang Pt.3 - Standalone Compiler
-pubDatetime: 2025-07-20T21:00:00
+pubDatetime: 2025-07-20
 tags:
   - flowlang
   - zig
