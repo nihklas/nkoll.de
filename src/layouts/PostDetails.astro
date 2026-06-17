@@ -34,6 +34,7 @@ const {
   timezone,
   tags,
   hideEditPost,
+  disableComments,
 } = post.data;
 
 const { Content } = await render(post);
@@ -176,7 +177,7 @@ if (series) {
 
     <ShareLinks />
 
-    <Comments client:only="react" />
+    {!disableComments && <Comments client:only="react" /> }
 
     <hr class="my-6 border-dashed" />
 
