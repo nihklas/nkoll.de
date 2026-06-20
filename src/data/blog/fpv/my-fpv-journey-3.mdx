@@ -1,0 +1,122 @@
+---
+title: My FPV Journey Pt. 3
+pubDatetime: 2026-06-20
+draft: true
+tags:
+  - fpv
+  - drones
+  - outside life
+description:
+  I got interested in FPV Drone flying. This is Part 3 of documenting my
+  journey. The stuff finally arrived and I made my first real flying experiences
+---
+
+# Still waiting...
+
+The most difficult part for any order you are excited about. I regularly updated
+the tracking website to find out where my package is at the moment. I got
+increasingly unpatient even though I knew it could take a while. BetaFPV's
+shipping policy says 12-30 days for standard international shipping and they
+almost got to the upper end of that promise. 27 Days after ordering it finally
+arrived. In the meantime I swapped between normal day-to-day life, checking the
+tracking site and flying in the simulator. I had to wait for like a week until I
+even got the tracking link. The tracking sometimes didn't update so it looked
+like the package got stuck at some station and a few days later it was already
+in another country. For anyone as impatient as I am, ordering from China is a
+challenge in patience. The parcel also took quite a tour:
+
+![](@/assets/images/fpv/betafpv-shipment-tracking.jpg)
+
+# Pre-flight preparations
+
+The first thing I did was charge the batteries. I already ordered a new wallplug
+for the WhoopStor charger as I didn't have a spare one lying around with enough
+power. It needs at least 30 watts input power, so I took my beefy 96W MacBook
+charger and use that one for the first few charging cycles. I have the `480 mAh`
+Lava II batteries from BetaFPV, so to charge them in a way to not damage them
+and keep them as long lived as possible I charge them with a current setting of
+`0.4 A`. You could probably get away with a little more and therefore charge
+them quicker but I wasn't in a hurry and I would rather play it safe until I
+have more experience.
+
+import Collapse from "../../../components/Collapse.astro";
+
+<Collapse>
+    <Fragment slot="summary">
+        Where does the `0.4 A` come from?
+    </Fragment>
+
+    Batteries have a few important measurements associated with them. They vary
+    from type, capacity, use case, manufacturer and so on. The important one to
+    charge is the capacity in milliamp-hours, in this case `480 mAh`.
+
+    The other important measurement is the C-Rating. It describes the maximum
+    discharge current the battery can safely provide. The Lava II's have a
+    C-Rating of `95C`. This by itself is meaningless. To get the actual
+    discharge current you have to multiply the capacity in amps by the C-Rating.
+    To get from milliamp to amp you simply divide by `1000`.
+
+    So in this case, the maximum current provided by the battery would be
+    `(480 / 1000) * 95 = 45.6 A`. If you punch the throttle and make the drone's
+    motors run at full power, the battery could provide at it's peak about `45 A`.
+
+    This is for discharging. For charging a good rule of thumb is to charge at
+    `1C`. That means, set the charging current to (in this case)
+    `(480 / 1000) * 1 = 0.48 A`. The charger can set the charging current in
+    `0.1 A` increments from anywhere between `0.3-1.5 A`. I rounded down and got
+    to `0.4 A` for my charging current.
+
+</Collapse>
+
+While the batteries were charging, I connected the drone to my computer and used
+`Betaflight Configurator` to configure a few things. You can give the aircraft a
+name and my girlfriend and I named the little guy "Gary". The name is displayed
+in the OSD (On-Screen-Display). I changed a few switches around so I can control
+him like I want but most of the default settings are pretty good. It is a
+Bind-N-Fly after all so the whole point is for the defaults to be good so you
+can just _bind_ you controller and goggles and immediately start _flying_. I was
+looking through the settings to see what else I can do until the batteries are
+charged but there wasn't really something to change until I flew the drone
+because most of these settings change the flight characteristics so until I
+actually fly it, I can't really tell if I made it better or worse.
+
+I bound my controller to the drone by pressing the "bind" button on the receiver
+tab in Betaflight and then selecting "bind" in the ExpressLRS Lua Script on my
+controller. For anyone that doesn't know what those mean, there are a lot of
+easy to follow beginner tutorials for this setup but if you don't plan on flying
+yourself these details don't matter. Just know that I bound the controller to
+the drone. After that I also bound the goggles. The VTX (Video-Transmitter) of
+the drone is analog, which means it just broadcasts a signal through the air on
+a specific frequency and to "bind" the goggles you basically just have to set
+the goggles to the same frequency and it should show you the video. Most goggles
+have an auto-find feature that just scan all frequencies and choose the one with
+the strongest signal. Power the drone right next to the goggles, choose the
+auto-find and you should easily find the signal. That's it, now you can go and
+fly FPV!
+
+# at last, i fly
+
+As soon as the batteries were fully charged, I plugged them into Gary and
+started flying. I have the freestyle version of the BetaFPV Air75 II, which has
+the least powerful motors. That doesn't mean it's weak though. It is incredibly
+powerful and fast and you really have to be careful to not bump into everything.
+Especially the throttle is very sensitive and flying indoors means you basically
+keep the throttle between 10-30% or you rocket into the ceiling. After the first
+few attempts I plugged Gary back into the computer and set a throttle limit to
+80%, which means the full throttle command from the controller means 80%
+throttle for the motors. The whole scale in between also has more resolution and
+_should_ make flying indoors a bit easier. It still was incredibly difficult.
+
+I decided to go outside to try out flying in an open space and see what little
+Gary can do without restrictions:
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube-nocookie.com/embed/DA07JDZ2vPc?si=AXty7kQKiCmBctoD"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+></iframe>
