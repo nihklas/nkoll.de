@@ -9,6 +9,7 @@ import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
 import IconTelegram from "@/assets/icons/IconTelegram.svg";
 import IconPinterest from "@/assets/icons/IconPinterest.svg";
+import IconInstagram from "@/assets/icons/IconInstagram.svg";
 import IconForgejo from "@/assets/icons/IconForgejo.svg";
 import { SITE } from "@/config";
 
@@ -37,6 +38,12 @@ export const SOCIALS: Social[] = [
     href: "https://gitlab.com/nihklas",
     linkTitle: `${SITE.title} on Gitlab`,
     icon: IconGitlab,
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/nihklas_/",
+    linkTitle: `${SITE.title} on Instagram`,
+    icon: IconInstagram,
   },
   {
     name: "LinkedIn",
