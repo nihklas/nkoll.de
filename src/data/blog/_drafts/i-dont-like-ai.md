@@ -112,14 +112,27 @@ easily get the solution with it. But having the ability to defer calculating
 even simple things to a machine because you are lazy probably caused you to
 either forget how to do those things or not learn them in the first place.
 
-```
-// TODO: more/better examples what could happen if you use AI too much
-```
-
 Now imagine a calculator, but for everything that requires thinking or writing.
 How do you write a formal email? Suppose you work in retail, can you help a
 customer when they have a problem? Sure these sound replacable. But do you
 really want to let it go so far, that you can't do any formal communication?
+
+Or look at education. School work that is done by AI is completely wasted. The
+same way you don't learn anything if you copy what your neighbor wrote, you
+learn even less when you don't even _write_ it. I have some opinions on the
+current school system and I don't believe it is well fitted for todays world,
+but at least I did learn how to write, read and do simple maths. I also got into
+IT through school. If I would have done all my coding assignments with Claude or
+ChatGPT, I most likely wouldn't have my job today and even worse, wouldn't have
+found out about one of the biggest passions I have. If that is not enough,
+imagine a doctor that did all their university assignments with AI. Imagine them
+operating on you. Imagine a pilot on your vacation flight who has never learned
+how to read the instruments. Imagine your lawyer showing up at court with an AI
+hallucinated defense strategy and instead of getting you out of trouble they
+increase the sentence or fine you receive. Those are very exaggerated examples,
+I know. But people growing up now and using ChatGPT in school, could be the next
+generation of care or medical personnel that may be responsible for you, when
+you are old and in a retirement home.
 
 Calculators are easy enough to come by. But AI is very limited in availability.
 You can either buy a subscription at one of the big players and be completely
@@ -188,13 +201,88 @@ scary companies like Palantir that are pushing for this automation and this
 company is already being implemented in some governments and police stations. Do
 with that what you will.
 
-# TODO:
+# Other reasons to not like AI
 
-- the other bad things
-  - data centers
-  - environment
-  - political state of the US
-    - political involvement and stances of the CEOs
-    - claude mythos and fabel are banned for non-US people
-- call to action?
-- final thoughts
+## The environment
+
+Besides the misuses there are other reasons why one could be against the further
+developments that are happening right now. For example data centers. Data
+centers are not an AI exclusive thing, I know that. But since AI is by far the
+most power hungry application currently running inside those and AI being the
+main reason so many new ones are built, I still take it as the main factor. Data
+centers are incredibly thursty and need a lot of water to cool down the servers
+and chips. They take water from different sources, including fresh water
+supplies that would otherwise go to human consumption. Partly, it takes away
+water from us that we need to, I don't know, drink, but it also pumps back
+warmed water into rivers, lakes or wherever. I have not enough knowledge to
+explain in detail what this exactly means and I encourage you to read up on it
+to see what the impact of that is but I think anyone who is remotely interested
+in _living on the earth_ should be interested in keeping climate change in check
+and data centers are at least not benefitial.
+
+Data centers are also built next to mostly poor and marginalized communities in
+America. They emit a low frequency humming noise non-stop that can actually
+cause real health problems like higher blood pressure and anxiety (again,
+research yourself and fact check everything you read on here and anywhere on the
+internet). The fact this is possible goes hand-in-hand with the next problem I
+have with current AI development: Politics.
+
+## Politics
+
+Basically all of the big AI companies are US-based. There are a few things
+coming from China, especially the more open source models like DeepSeek and Qwen
+but those are still not the ones that are widely used. ChatGPT, Claude, Gemini,
+Grok, Copilot and basically all the others are from the USA. And we can already
+see what that means for us non-amerians. Donald Trump decided that Anthropic's
+new Models "Mythos" and "Fable" are to good for other nations to use and
+mandated Anthropic to block usage for any non-US person or company. They
+couldn't easily implement that rule so they [_blocked everyone_](https://www.anthropic.com/news/fable-mythos-access)
+from using those models. This can potentially happen to all the other companies
+as well so there may be a point in the future where you only have access to the
+"stupid" models unless you are an official US citizen. I don't want to rant
+about Trump's politics, they are way to many things to hate him, but this
+directly affects AI so it belongs into this rant.
+
+The active control of the government is one thing, but the CEOs of the big
+companies and companies themselves are not necessarily in a moral high ground.
+They still meet and sympathize with Trump and the current government so this
+could be used (and probably already is used) for direct political manipulation.
+Just look at Grok and what Elon Musk does with it. The scandal around "Mecha
+Hitler", where Grok went on a racist nazi commenting spree, being manipulated by
+different users to tell increasingly bad things and eventually calling himself
+"Mecha Hitler". Elon publicly said he things that Grok was/is to "woke" and
+decided to steer it into a more right wing direction. Grok is famously known for
+the missing guard rails and borderline dangerous answers. I don't know if thats
+still the case but the fact that Elon basically supported that behaviour is
+concerning at least and a direct danger to democracy at most. Other CEOs aren't
+_that_ bad but they still generally support Trump either from personal believe
+or just to keep their business away from random laws that Trump decides in his
+sleep.
+
+Politics is also a big problem without the makers of AI taking a part in it. It
+so horrifyingly easy to create fake images, videos or articles to support your
+narrative that once you start realising that, you can't believe pretty much
+anything. You have to be careful what you believe, but you can't possibly fact
+check everything you see. Propaganda is already a powerful tool to manipulate a
+group of people but now it is easier to do than ever. Politics are also getting
+more and more heated and extreme in both directions that the increase in fake
+news is just fueling the hate between parties even more and basically make
+normal discourse impossible. Combine this with the emotionally charged news the
+far right media outlets already put out and you get an increasingly enraged
+population that get steered by the powerful. Yes, this is getting into
+conspiracy theory territory but I am genuinely scared what will happen when
+nothing is believably anymore and everyone is just going off of feelings instead
+of facts when talking politics and the future of the country.
+
+# What should I do?
+
+In my humble opinion, you should just stop using AI as much as you can.
+Everything that AI can do for you, you can do yourself. You are either to lazy
+or just not versed in the topic. If you have a real use case that you absolutely
+_need_ to use AI for, please try your best to use self hosted solutions or
+ethically sane companies. I don't have examples of such companies because I
+don't use AI at all, but you probably find something with a bit of research.
+Also use a different search engine than google, or at least add `-ai` to all
+search queries to disable googles AI summary. But for the vast majority of
+people, AI is really not necessary. Please try to life your live by thinking
+yourself. You would be surprised by what your brain is capable of.
