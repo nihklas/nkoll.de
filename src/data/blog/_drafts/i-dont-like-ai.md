@@ -286,3 +286,20 @@ Also use a different search engine than google, or at least add `-ai` to all
 search queries to disable googles AI summary. But for the vast majority of
 people, AI is really not necessary. Please try to life your live by thinking
 yourself. You would be surprised by what your brain is capable of.
+
+# Final words
+
+If you have any thoughts about this, please drop a comment or contact me
+directly. If I got something factually incorrect, please correct me. But please
+don't use AI to fact check me. They get stuff wrong as well.
+
+If you use AI for basic tasks like writing E-Mails, a caption of a LinkedIn post
+or even researching topics, I _will_ think less of you as a person. The same way
+I think less of you if you don't believe in climate change. I still believe you
+deserve respect as a human, but I may not take your opinions as serious anymore.
+This is for transparency, not to shame everyone using AI. This also doesn't
+include people who get forced to use AI by their work place for example or
+moderate and concious users of AI. I still think you should try to use less or
+no AI, but if you do and you know what that means in terms of factual
+correctness, environment and what else I wrote here, I think it is less bad.
+Still not great but better than defaulting to use ChatGPT for basic tasks.
