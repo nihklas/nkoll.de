@@ -22,6 +22,16 @@ Content:
 - lost c-clamp of one motor when trying to clean it
   - got 4 replacement motors, they are only available in a 4-pack
   - thought about upgrading, but instead chose to have 3 additional spares
+- Broke a blade off from a bad crash against office chair, replaced prop, flies as good as new
+- Range is at a few hundred meters on open field, tested/measured to be at least 250m with stable video
+- tricks indoor are very hard, outdoors still difficult but the bigger space makes it a lot easier
+  - rolls
+  - flips
+  - split s
+  - power loop
+  - dive
+  - orbit
+- Hitting gaps is harder than i thought
 
 TODO:
 
