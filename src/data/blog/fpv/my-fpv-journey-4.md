@@ -32,6 +32,7 @@ Content:
   - dive
   - orbit
 - Hitting gaps is harder than i thought
+- Go through all recordings and make a compilation of my first months of flying
 
 TODO:
 
