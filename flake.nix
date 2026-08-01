@@ -15,8 +15,8 @@
     devShells = eachSystem ({pkgs, ...}: {
       default = pkgs.mkShellNoCC {
         packages = [
-          pkgs.pnpm
-          pkgs.nodejs
+          pkgs.pnpm_11
+          pkgs.nodejs_24
 
           pkgs.tailwindcss-language-server
           pkgs.typescript-language-server
@@ -34,14 +34,14 @@
 
         nativeBuildInputs = with pkgs; [
           nodejs_24
-          pnpm_10
+          pnpm_11
           pnpmConfigHook
         ];
 
         pnpmDeps = pkgs.fetchPnpmDeps {
           inherit (finalAttrs) pname version src;
-          fetcherVersion = 2;
-          hash = "sha256-Cn2neBZ0qyGy0RFuYZYUWHu5C+HN7/5YpmPyg2lXktQ=";
+          fetcherVersion = 4;
+          hash = "sha256-B5dIM+j5kaxzQV1IU/3zo+e332YxASKBzNercNFTPm8=";
         };
         buildPhase = ''
           runHook preBuild

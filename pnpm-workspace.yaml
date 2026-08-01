@@ -1,0 +1,2 @@
+fetchTimeout: 300000
+networkConcurrency: 5
