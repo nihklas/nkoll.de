@@ -139,8 +139,31 @@ Last thing I got was a new antenna for my goggles. The stock antenna on the
 VR04s are fine but not great and especially bad with obstacles in the way.
 Flying behind a tree immediatly disrupts the signal and makes flying around it
 very hard. On discord someone with almost the same setup recommended a specific
-antenna so I got that one.
+antenna (TrueRC Singularity) so I got that one.
+
 **TODO: Add Comparison Video of old vs new antenna**
+
+One thing you might notice is that the new antenna has worse performance than
+the stock antenna on the VR04s. That is because of something called
+`polarization`. Please don't ask me what that means, I understand it as a sort
+of direction that the antenna speaks in. If you need more information please do
+some research, maybe you can enlighten me as well. Anyways, the stock antenna on
+the Air75 and on the VR04 are linear polarized. The new antenna is a
+_RHCP_-antenna, or _right-hand-circular-polarized_. In my previously stated
+understanding, this means the new antenna on the goggles listen in a different
+direction than the antenna on the drone is sending. This mismatch is the reason
+for a loss in link quality.
+
+Soooooo I bought another new antenna for the drone. This time I got the Foxeer
+Microlollipop in a 2-pack. If the drone crashes badly and rips off the antenna,
+I have one spare. Or when I inevitably get another tinywhoop I have the correct
+antenna already on hand. It's also RHCP, like the antenna on the goggles,
+because they need to match. For physics reasons. Discord once again promised me
+better connection, and I am gullible so I bought them and will tried them out:
+
+**TODO: Add Comparison Video of all 4 combinations**
+
+**TODO: Add conclusion of antenna comparisons**
 
 # Flight experience
 
