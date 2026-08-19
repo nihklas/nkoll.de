@@ -174,16 +174,16 @@ const structuredData = {
       src="https://plausible.aaronstudios.de/js/pa-7JzVTzlU-HJPxgytaC3Mq.js"
     ></script>
     <script is:inline>
-      ((window.plausible =
+      window.plausible =
         window.plausible ||
-        function () {
-          (plausible.q = plausible.q || []).push(arguments);
-        }),
-        (plausible.init =
-          plausible.init ||
-          function (i) {
-            plausible.o = i || {};
-          }));
+        function (args) {
+          (plausible.q = plausible.q || []).push(...args);
+        };
+      plausible.init =
+        plausible.init ||
+        function (i) {
+          plausible.o = i || {};
+        };
       plausible.init();
     </script>
   </head>

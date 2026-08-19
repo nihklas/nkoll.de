@@ -2,7 +2,6 @@ import type { Props } from "astro";
 import type { GiscusProps } from "@giscus/react";
 import IconMail from "@/assets/icons/IconMail.svg";
 import IconGitHub from "@/assets/icons/IconGitHub.svg";
-import IconGitlab from "@/assets/icons/IconGitlab.svg";
 import IconBrandX from "@/assets/icons/IconBrandX.svg";
 import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
 import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
@@ -32,12 +31,6 @@ export const SOCIALS: Social[] = [
     href: "https://github.com/nihklas",
     linkTitle: `${SITE.title} on GitHub`,
     icon: IconGitHub,
-  },
-  {
-    name: "Gitlab",
-    href: "https://gitlab.com/nihklas",
-    linkTitle: `${SITE.title} on Gitlab`,
-    icon: IconGitlab,
   },
   {
     name: "Instagram",
