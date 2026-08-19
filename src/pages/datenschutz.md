@@ -243,6 +243,26 @@ Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt
 Sofern weitere Cookies und Dienste auf dieser Website eingesetzt werden, können Sie dies dieser
 Datenschutzerklärung entnehmen.
 
+### Server-Log-Dateien
+
+Der Provider der Seiten erhebt und speichert automatisch Informationen in so
+genannten Server-Log- Dateien, die Ihr Browser automatisch an uns übermittelt.
+Dies sind:
+
+- Browsertyp und Browserversion
+- verwendetes Betriebssystem
+- Referrer URL
+- Hostname des zugreifenden Rechners
+- Uhrzeit der Serveranfrage
+- IP-Adresse
+
+Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
+
+Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.
+Der Websitebetreiber hat ein berechtigtes Interesse an der technisch
+fehlerfreien Darstellung und der Optimierung seiner Website – hierzu müssen die
+Server-Log-Files erfasst werden.
+
 ## 4. Plugins und Tools
 
 ### YouTube mit erweitertem Datenschutz

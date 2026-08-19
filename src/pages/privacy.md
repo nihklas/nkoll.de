@@ -243,6 +243,26 @@ disable cookies, the functionality of this website may be limited.
 If additional cookies and services are used on this website, you can find this
 information in this Privacy Policy.
 
+### Server Log Files
+
+The provider of this website automatically collects and stores information in so-called
+server log files, which your browser automatically transmits to us.
+This information includes:
+
+- Browser type and version
+- Operating system used
+- Referrer URL
+- Hostname of the accessing computer
+- Time of the server request
+- IP address
+
+This data is not combined with other data sources.
+
+The collection of this data is based on Article 6(1)(f) of the GDPR.
+The website operator has a legitimate interest in the technically
+flawless display and optimization of its website—to this end, the
+server log files must be collected.
+
 ## 4. Plugins and Tools
 
 ### YouTube with Enhanced Privacy Settings
